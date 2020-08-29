@@ -1,0 +1,4 @@
+-dontobfuscate
+-allowaccessmodification
+-keepattributes SourceFile, LineNumberTable
+-keep class io.ktor.server.netty.EngineMain
