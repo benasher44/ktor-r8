@@ -106,6 +106,12 @@ val r8Jar = tasks.register("r8Jar", JavaExec::class) {
     )
 }
 
+tasks.register("r8Help", JavaExec::class) {
+    classpath(r8Configuration)
+    main = "com.android.tools.r8.R8"
+    args = listOf("--help")
+}
+
 sourceSets {
     val main by getting {
         resources.srcDir("resources")
